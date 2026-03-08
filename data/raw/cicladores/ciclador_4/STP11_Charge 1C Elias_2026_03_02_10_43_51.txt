@@ -1,0 +1,5 @@
+Date,Point,Step Point,Cycler Status,Remote Control,DC Out/In,Operation Mode,Regulation Mode,Time,Set Voltage (V),Set PS Current (A),Set PS Power (W),Set PS Res. (Ohm),Set EL Current (A),Set EL Power (W),Set EL Res. (Ohm),PSB Voltage (V),PSB Current (A),PSB Power (W),ADC Voltage (V),ADC Current (A),ADC Power (W),ADC T. Battery (°C),ADC T. Ambient (°C),ADC T. Shunt (°C),SOH PS (Ah),SOH EL (Ah)
+2026/03/03 08:04:24,0,1,Step ON,On,On,UIR,Mode CC,0.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.578,0.29,1.0,3.464,0.00,0.0,21.7,-55.0,21.8,0.000000,0.000000
+2026/03/03 08:04:29,1,1,Step ON,On,On,UIR,Mode CC,5.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.653,0.34,1.2,3.654,0.33,1.2,21.7,-55.0,21.8,0.000462,0.000000
+2026/03/03 08:04:34,2,1,Step ON,On,On,UIR,Mode CC,10.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.658,0.34,1.2,3.659,0.33,1.2,21.7,-55.0,22.1,0.000932,0.000000
+2026/03/03 08:04:39,3,1,Step ON,On,On,UIR,Mode CC,15.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.662,0.34,1.2,3.664,0.33,1.2,22.1,-55.0,22.1,0.001398,0.000000
