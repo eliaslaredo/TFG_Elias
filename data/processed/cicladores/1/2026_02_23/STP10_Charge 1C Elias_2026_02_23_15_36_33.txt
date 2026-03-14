@@ -1,7 +1,2 @@
 Date,Point,Step Point,Cycler Status,Remote Control,DC Out/In,Operation Mode,Regulation Mode,Time,Set Voltage (V),Set PS Current (A),Set PS Power (W),Set PS Res. (Ohm),Set EL Current (A),Set EL Power (W),Set EL Res. (Ohm),PSB Voltage (V),PSB Current (A),PSB Power (W),ADC Voltage (V),ADC Current (A),ADC Power (W),ADC T. Battery (°C),ADC T. Ambient (°C),ADC T. Shunt (°C),SOH PS (Ah),SOH EL (Ah)
-2026/02/23 15:34:23,0,1,Step ON,On,On,UIR,Mode CC,0.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,2.984,0.00,0.0,3.043,-0.01,0.0,19.2,-55.0,19.1,0.000000,0.000000
-2026/02/23 15:34:28,1,1,Step ON,On,On,UIR,Mode CC,5.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.316,0.31,1.0,3.330,0.31,1.0,19.3,-55.0,19.2,0.000432,0.000000
-2026/02/23 15:34:33,2,1,Step ON,On,On,UIR,Mode CC,10.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.339,0.31,1.0,3.350,0.31,1.0,19.7,-55.0,19.6,0.000872,0.000000
-2026/02/23 15:34:38,3,1,Step ON,On,On,UIR,Mode CC,15.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.355,0.31,1.0,3.370,0.31,1.0,19.5,-55.0,19.4,0.001307,0.000000
-2026/02/23 15:34:43,4,1,Step ON,On,On,UIR,Mode CC,20.1,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.373,0.31,1.0,3.386,0.31,1.0,19.2,-55.0,19.0,0.001747,0.000000
 2026/02/23 15:34:48,5,1,Step ON,On,On,UIR,Mode CC,25.0,4.209,0.33,1.9,0.498,0.33,1.9,0.498,3.387,0.31,1.0,3.400,0.31,1.0,19.3,-55.0,19.2,0.002181,0.000000
