@@ -24,7 +24,7 @@ Aquí encontrarás el análisis de datos relativo al ensayo de 36 baterías de l
         - baterías.xlsx : Hoja de cálculo creada manualmente durante los ensayos para facilitar las correspondencias de archivos generados con cada batería individual.
     - processed/ : Datos filtrados, modificados y adaptados para facilitar el análisis.
         - cicladores/ : Contiene los archivos de los cicladores modifcados y adaptados
-        - baterias/ : Contiene el archivo .txt proveniente de la última carga del ciclador correspondiente a cada una de las baterías.
+        - baterias/ : Contiene una carpeta por batería ensayada, a su vez conteniendo un sólo archivo .txt correspondiente al generado por el ciclador durante el ciclo de carga final
 
 - Capturas/ : Capturas de pantalla conteniendo la información de configuración de los diferentes ensayos.
 - procesado_ciclados.ipynb : Cuaderno de Jupyter conteniendo los scripts de Python utilizados en el análisis.
