@@ -1,0 +1,70 @@
+================================================================================
+IMPEDANCE DATA FIX - QUICK REFERENCE
+================================================================================
+
+PROBLEM:
+  Output CSV missing impedance values (all zeros)
+
+ROOT CAUSE:
+  Bacteria objects used for selection had impedance=0
+  Updated CSV was created AFTER selection, so updates were never used
+
+SOLUTION:
+  Added new cell 14 that reloads batteries from updated CSV before selection
+
+CHANGES:
+  1. src/processing/cycling.py
+     - Added function: load_batteries_from_csv()
+     
+  2. analisis_baterias.ipynb
+     - Updated imports (cell 3) to include: load_batteries_from_csv
+     - Added new cell 14 to reload batteries WITH impedance
+
+UPDATED PIPELINE:
+  Step 1: Organize files
+  Step 2: Trim files
+  Step 3: Build SoH matrix (impedancia=0)
+  Step 4: Build ZCURVE matrix (get impedance data)
+  Step 5: Update impedance in CSV
+  Step 5.5: RELOAD BATTERIES WITH IMPEDANCE <- NEW
+  Step 6: Select best 18 (now uses impedance)
+  Step 7: Display info
+  Step 8: Export (includes impedance)
+
+OUTPUT FILE BEFORE:
+  numero,soh,impedancia
+  1,2.50,0
+  2,2.48,0
+
+OUTPUT FILE AFTER:
+  numero,soh,impedancia
+  1,2.50,0.145
+  2,2.48,0.147
+
+HOW TO USE:
+  1. Open analisis_baterias.ipynb
+  2. Run all cells in order
+  3. Check data/output/mejores_18_baterias.csv
+  4. Now contains impedancia values!
+
+VERIFICATION:
+  - All imports work: Python script successful
+  - Function signature correct: load_batteries_from_csv()
+  - Bateria.to_dict() includes impedancia: Verified
+  - Pipeline flow: Complete and logical
+
+NO BREAKING CHANGES:
+  - All existing functions unchanged
+  - New function is purely additive
+  - Can be used independently
+  - Legacy notebooks still work
+
+FILES MODIFIED:
+  - src/processing/cycling.py (+ 1 function)
+  - analisis_baterias.ipynb (+ 1 import line, + 1 new cell)
+
+DOCUMENTATION:
+  - IMPEDANCE_FIX_SUMMARY.md (comprehensive)
+  - This file (quick reference)
+
+================================================================================
