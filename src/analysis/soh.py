@@ -54,8 +54,11 @@ def find_best_18(baterias: List[Bateria]) -> List[Bateria]:
     6. Returns selected batteries sorted by original battery number
     """
     
-    # Filter out None values
-    valid_baterias = [b for b in baterias if b is not None]
+    # Filter out None values and batteries with invalid impedance
+    valid_baterias = [
+        b for b in baterias 
+        if b is not None and 0.1 <= b.impedancia <= 0.25
+    ]
     
     if len(valid_baterias) < BEST_BATTERIES_COUNT:
         raise ValueError(
